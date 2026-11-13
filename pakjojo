@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Persilangan Mendel - IPA Kelas 9</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🧬 Simulasi Persilangan Mendel</h1>
+        <p>Belajar Genetika Kelas 9: Monohibrid & Dihibrid</p>
+    </header>
+
+    <main>
+        <!-- Panel Input -->
+        <section class="input-panel">
+            <h2>Pilih Genotipe Induk</h2>
+
+            <div class="parent-input">
+                <label for="parent1">Induk 1 (Parental 1):</label>
+                <select id="parent1">
+                    <option value="AA">AA (Homozigot Dominan)</option>
+                    <option value="Aa" selected>Aa (Heterozigot)</option>
+                    <option value="aa">aa (Homozigot Resesif)</option>
+                </select>
+            </div>
+
+            <div class="parent-input">
+                <label for="parent2">Induk 2 (Parental 2):</label>
+                <select id="parent2">
+                    <option value="AA">AA (Homozigot Dominan)</option>
+                    <option value="Aa" selected>Aa (Heterozigot)</option>
+                    <option value="aa">aa (Homozigot Resesif)</option>
+                </select>
+            </div>
+
+            <button id="crossBtn">Silangkan (F1)</button>
+            <button id="resetBtn">Reset</button>
+        </section>
+
+        <!-- Papan Punnett -->
+        <section class="punnett-panel">
+            <h2>Diagram Punnett</h2>
+            <div id="punnettContainer">
+                <p class="placeholder">Klik "Silangkan" untuk melihat hasil persilangan.</p>
+            </div>
+        </section>
+
+        <!-- Hasil & Rasio -->
+        <section class="result-panel">
+            <h2>Hasil Persilangan (F1)</h2>
+            <div id="resultContainer">
+                <p class="placeholder">Hasil akan muncul di sini.</p>
+            </div>
+        </section>
+
+        <!-- Kuis Cepat -->
+        <section class="quiz-panel">
+            <h2>Kuis Cepat</h2>
+            <p id="quizQuestion">Tekan "Silangkan" terlebih dahulu.</p>
+            <div id="quizOptions"></div>
+            <p id="quizFeedback"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Dibuat untuk Pembelajaran IPA Kelas 9 - Materi Genetika (Hukum Mendel)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
